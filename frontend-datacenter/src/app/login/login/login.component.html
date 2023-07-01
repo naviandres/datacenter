@@ -1,0 +1,26 @@
+<h1>Login</h1>
+<div>
+    <form #loginForm="ngForm">
+        <div class="form-group row">
+          <label for="documento" class="col-form-label col-sm-2">Documento</label>
+          <div class="col-sm-6">
+            <input type="number" class="form-control" [(ngModel)]="usuario.documento" name="documento">        
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="clave" class="col-form-label col-sm-2">Clave</label>
+            <div class="col-sm-6">
+              <input type="password" class="form-control" [(ngModel)]="usuario.clave" name="clave">        
+            </div>
+        </div>
+
+        
+
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <button role="button" class="btn btn-primary" (click)='login()'>Login</button>
+          </div>
+        </div>
+      </form>
+</div>
